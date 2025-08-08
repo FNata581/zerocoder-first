@@ -26,3 +26,16 @@ class Warrior():
         print(f"цвет волос воина - {self.hair_color}")
         print(f"сила воина - {self.power}")
         print(f"выносливость воина - {self.endurance}")
+
+
+war1 = Warrior("Степа", 76, 54, "коричневый") # первый воин, в скобках параметры
+print(war1) # <__main__.Warrior object at 0x000001D3F2C97CB0> краткая информация об обьекте
+
+print(war1.name) # обратились к конкретному обьекту выдал: Степа
+
+print(war1.endurance) #сила 54
+war1.sleep()   # лег спать, силу увеличивается на 2
+print(war1.endurance) #сила 56
+
+
+
